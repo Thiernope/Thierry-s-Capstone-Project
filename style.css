@@ -1,0 +1,196 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+ list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.top-wraper{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/top-bg.PNG);
+    background-attachment: fixed;
+    background-size: cover; 
+    
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+.bars i{
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+
+
+.top-grid{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.greeting{
+    color: white;
+}
+.greeting h2{
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.top-button{
+    padding: 10px 5px;
+    background-color:rgb(66, 145, 128); 
+    border:none;
+    outline:none; 
+    width:155px;
+    height: 90px;
+    margin-top:125px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: 35px;
+   
+}
+
+.top-button i{
+    font-size: 25px;
+}
+
+.profile{
+    background-color: lightgray;
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px auto 200px;
+    grid-template-areas:
+    "b h h h h h h h h h y y"
+    "b m m m m m m m m m y y"  
+}
+
+.heading{
+    grid-area: h;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.heading h1{
+    margin-top: 50px;
+    color: rgb(66, 145, 128);
+}
+.heading h4{
+    margin-top: 20px;
+}
+
+.heading p{
+    color: rgb(66, 145, 128);
+    
+}
+.about-me-banner{
+   
+    grid-area: m;
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+
+.blank{
+   
+    grid-area: b;
+}
+.menu{
+    
+    grid-area: y;
+    
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(12, 11, 11);
+    justify-content: space-around;
+    height: 72%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.menu ul li{
+    display: block;
+    padding-top: 30px;
+    padding-right:30px;
+    padding-left: 30px;
+    padding-bottom: 26px;
+}
+.menu ul li:hover{
+    background-color: rgb(66, 145, 128);
+    
+}
+
+.picture img{
+    border: 20px solid darkgray;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+
+.about{
+    width: 25%;
+}
+
+.details{
+    text-align: left;
+}
+.details h3{
+    margin-top:10px;
+}
+
+.details button{
+    margin-top: 20px;
+    padding: 10px 5px;
+    background-color: lightblue;
+    border:none;
+    outline:none;
+}
+.details i{
+color: blue;
+font-size:18px;
+}
+
+
+
+
+
