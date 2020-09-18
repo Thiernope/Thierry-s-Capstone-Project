@@ -19,21 +19,20 @@ a{
 
 .top-wraper{
     width: 100%;
-    height: 100vh;
     background-image: url(images/top-bg.PNG);
     background-attachment: fixed;
-    background-size: cover; 
-    
-    
+    background-size: cover;  
 }
 
 .header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color:rgb(66, 145, 128); 
+    height: 8vh;
 }
 
-ul{
+.header >ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -53,14 +52,16 @@ ul{
 
 
 .top-grid{
-    margin-top: 100px;
+    height: 60vh;
+    padding-top: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .greeting{
     color: white;
+    margin-left: 25vh;
 }
 .greeting h2{
     margin-top: 50px;
@@ -83,19 +84,27 @@ ul{
 }
 
 .top-button i{
-    font-size: 25px;
+    font-size: 50px;
+    width: 100px;
+    height:50px;
+    display: block;
 }
 
 .profile{
     background-color: lightgray;
     width: 100%;
-    height: 90vh;
+    height: 450vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px auto 200px;
+    grid-template-rows: repeat(7, auto);
     grid-template-areas:
     "b h h h h h h h h h y y"
-    "b m m m m m m m m m y y"  
+    "b e e e e e e e e e y y"
+    "b a a a a a a a a a y y"
+    "b p p p p p p p p p y y"
+    "b x x x x x x x x x y y"
+    "b f f f f f f f f f y y"
+    ;  
 }
 
 .heading{
@@ -103,6 +112,7 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: violet;
 
 }
 
@@ -119,22 +129,53 @@ ul{
     
 }
 .about-me-banner{
-   
-    grid-area: m;
+    background-color: green;
     display: flex;
     justify-content: space-around;
+    margin-top: 30px;
   
 }
 
 
 .blank{
-   
+    background-color: chocolate;
     grid-area: b;
 }
 .menu{
-    
     grid-area: y;
-    
+    background-color: orange;
+
+}
+.experience{
+background-color: gold;
+grid-area: e;
+padding-top: 20px;
+}
+
+.school{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.abilities{
+   background-color: pink; 
+   grid-area: a;
+}
+
+.project{
+background-color: khaki;
+grid-area: p;
+}
+
+.blog{
+background-color: red;
+grid-area: x;
+}
+
+.footer{
+background-color: darkblue;
+grid-area: f;
 }
 
 .menu ul{
@@ -142,9 +183,11 @@ ul{
     flex-direction: column;
     background-color:rgb(12, 11, 11);
     justify-content: space-around;
-    height: 72%;
+    height: 20%;
     width: 70%;
     margin: 0 auto;
+    position: sticky;
+    top: 50px;
 }
 
 .menu ul li{
@@ -189,6 +232,7 @@ ul{
 color: blue;
 font-size:18px;
 }
+
 
 
 
